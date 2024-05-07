@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - "${PORT}:80"
